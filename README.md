@@ -27,6 +27,7 @@
     <li>
       <a href="#about">About</a>
       <ul>
+        <li><a href="#wavelets">Wavelets</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
