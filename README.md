@@ -44,14 +44,14 @@ Each folder contains a Jypiter notebook containing the code and results for each
 
 <hr>
 
-### <a href="https://github.com/EthanRCT/Projects/Wavelets">Wavelets Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Wavelets">Wavelets Lab</a>
 
 Lab Objective: Wavelets are used to sparsely represent information. This makes them useful in
 a variety of applications. I explore both the one and two-dimensional discrete wavelet transforms
 using various types of wavelets. I then use a Python package called PyWavelets for further wavelet
 analysis including image cleaning and image compression.
 
-### <a href="https://github.com/EthanRCT/Projects/Facial%20Recognition">Facial Recognition Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Facial%20Recognition">Facial Recognition Lab</a>
 
 Lab Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
 of many portraits. Facial recognition is becoming increasingly important in security, law enforcement,
