@@ -25,9 +25,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about">About</a>
+      <a href="#labs">Labs</a>
       <ul>
-        <li><a href="#wavelets">Wavelets</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -38,8 +37,8 @@
 
 
 
-<!-- ABOUT -->
-## About
+<!-- Labs -->
+## Labs
 
 Each folder contains a Jypiter notebook containing the code and results for each project. Here is a list of the projects and their descriptions:
 
