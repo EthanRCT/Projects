@@ -46,14 +46,14 @@ Each folder contains a Jypiter notebook containing the code and results for each
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Wavelets">Wavelets Lab</a>
 
-Lab Objective: Wavelets are used to sparsely represent information. This makes them useful in
+- Lab Objective: Wavelets are used to sparsely represent information. This makes them useful in
 a variety of applications. I explore both the one and two-dimensional discrete wavelet transforms
 using various types of wavelets. I then use a Python package called PyWavelets for further wavelet
 analysis including image cleaning and image compression.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Facial%20Recognition">Facial Recognition Lab</a>
 
-Lab Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
+- Lab Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
 of many portraits. Facial recognition is becoming increasingly important in security, law enforcement,
 artificial intelligence, and other areas. Though humans can easily match pictures to people, computers
 are beginning to surpass humans at facial recognition. In this lab, I implement a basic facial
@@ -62,7 +62,7 @@ between faces.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Markov%20Chains">Markov Chains Lab</a>
 
-Lab Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the
+- Lab Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the
 system depends only on its current state. In this lab I learn to construct, analyze, and interact with
 Markov chains, then use a Markov-based approach to simulate natural language.
 
