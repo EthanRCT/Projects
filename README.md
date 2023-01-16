@@ -60,6 +60,12 @@ are beginning to surpass humans at facial recognition. In this lab, I implement 
 recognition system that relies on eigenvectors and the SVD to efficiently determine the difference
 between faces.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Markov%20Chains">Markov Chains Lab</a>
+
+Lab Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the
+system depends only on its current state. In this lab I learn to construct, analyze, and interact with
+Markov chains, then use a Markov-based approach to simulate natural language.
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
