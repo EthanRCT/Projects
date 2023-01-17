@@ -67,6 +67,18 @@ system depends only on its current state. In this lab I learn to construct, anal
 Markov chains, then use a Markov-based approach to simulate natural language.
 
 
+### <a href="https://github.com/EthanRCT/Projects/blob/main/Fourier%20Transform%20%26%20Convolution">Fourier Transform & Convolution Lab</a>
+
+- Lab Objective: The analysis of periodic functions has many applications in pure and applied
+mathematics, especially in settings dealing with sound waves. The Fourier transform provides a way
+to analyze such periodic functions. In this lab, I work with digital audio signals
+in Python, implement the discrete Fourier transform, and use the Fourier transform to detect the
+frequencies present in a given sound wave.
+
+- Lab Objective: The Fourier transform reveals information in the frequency domain about signals
+and images that might not be apparent in the usual time (sound) or spatial (image) domain. In this
+lab, I use the discrete Fourier transform to efficiently convolve sound signals and filter out some
+types of unwanted noise from both sounds and images.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
