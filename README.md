@@ -105,16 +105,11 @@ them to the backtracking problem.
 
 [![SQL][SQL-icon]][SQL-url] -->
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
+[![Python][Python-icon]][Python-url] &emsp; &emsp; [![Jupyter][Jupyter-icon]][Jupyter-url] &emsp; &emsp; &nbsp; [![Numpy][Numpy-icon]][Numpy-url] 
 
-| <div style="width:200px">[![Python][Python-icon]][Python-url]</div>| <div style="width:200px">[![Jupyter][Jupyter-icon]][Jupyter-url]</div>| <div style="width:200px">[![Numpy][Numpy-icon]][Numpy-url]</div>             
-  |         ------------            |                    -------------                    |           ------------------     |  
- |[![Scipy][Scipy-icon]][Scipy-url] | [![Matplotlib][Matplotlib-icon]][Matplotlib-url]    | [![Sympy][Sympy-icon]][Sympy-url]  |
- |[![PyTorch][PyTorch-icon]][PyTorch-url]   |           [![TQDM][tqdm-icon]][tqdm-url]    | [![Pandas][Pandas-icon]][Pandas-url]    |
+[![Scipy][Scipy-icon]][Scipy-url] &emsp; &emsp; &ensp; [![Matplotlib][Matplotlib-icon]][Matplotlib-url] &emsp; &emsp;  [![Sympy][Sympy-icon]][Sympy-url]  
+
+[![PyTorch][PyTorch-icon]][PyTorch-url] &emsp; &ensp; [![TQDM][tqdm-icon]][tqdm-url] &emsp; &emsp; &ensp; &ensp; [![Pandas][Pandas-icon]][Pandas-url]    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
