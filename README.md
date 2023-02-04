@@ -105,11 +105,7 @@ them to the backtracking problem.
 
 [![SQL][SQL-icon]][SQL-url] -->
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
+
 
 | <div style="width:200px">[![Python][Python-icon]][Python-url]</div>| <div style="width:200px">[![Jupyter][Jupyter-icon]][Jupyter-url]</div>| <div style="width:200px">[![Numpy][Numpy-icon]][Numpy-url]</div>             |
 |           ------------            |                    -------------                    |           ------------------       |
