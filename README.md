@@ -44,66 +44,77 @@ Each folder contains a Jypiter notebook containing the code and results for each
 
 <hr>
 
-### <a href="https://github.com/EthanRCT/Projects/tree/main/Wavelets">Wavelets Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Wavelets">Wavelets</a>
 
-- Lab Objective: Wavelets are used to sparsely represent information. This makes them useful in
+- Objective: Wavelets are used to sparsely represent information. This makes them useful in
 a variety of applications. I explore both the one and two-dimensional discrete wavelet transforms
 using various types of wavelets. I then use a Python package called PyWavelets for further wavelet
 analysis including image cleaning and image compression.
 
-### <a href="https://github.com/EthanRCT/Projects/tree/main/Facial%20Recognition">Facial Recognition Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Facial%20Recognition">Facial Recognition</a>
 
-- Lab Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
+- Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
 of many portraits. Facial recognition is becoming increasingly important in security, law enforcement,
 artificial intelligence, and other areas. Though humans can easily match pictures to people, computers
-are beginning to surpass humans at facial recognition. In this lab, I implement a basic facial
+are beginning to surpass humans at facial recognition. In this project, I implement a basic facial
 recognition system that relies on eigenvectors and the SVD to efficiently determine the difference
 between faces.
 
-### <a href="https://github.com/EthanRCT/Projects/tree/main/Markov%20Chains">Markov Chains Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Markov%20Chains">Markov Chains</a>
 
-- Lab Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the
-system depends only on its current state. In this lab I learn to construct, analyze, and interact with
+- Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the system depends only on its current state. In this project I learn to construct, analyze, and interact with
 Markov chains, then use a Markov-based approach to simulate natural language.
 
 
-### <a href="https://github.com/EthanRCT/Projects/blob/main/Fourier%20Transform%20%26%20Convolution">Fourier Transform & Convolution Lab</a>
+### <a href="https://github.com/EthanRCT/Projects/blob/main/Fourier%20Transform%20%26%20Convolution">Fourier Transform & Convolution</a>
 
-- Lab Objective: The analysis of periodic functions has many applications in pure and applied
+- Objective: The analysis of periodic functions has many applications in pure and applied
 mathematics, especially in settings dealing with sound waves. The Fourier transform provides a way
 to analyze such periodic functions. In this lab, I work with digital audio signals
 in Python, implement the discrete Fourier transform, and use the Fourier transform to detect the
 frequencies present in a given sound wave.
 
-- Lab Objective: The Fourier transform reveals information in the frequency domain about signals
+- Objective: The Fourier transform reveals information in the frequency domain about signals
 and images that might not be apparent in the usual time (sound) or spatial (image) domain. In this
-lab, I use the discrete Fourier transform to efficiently convolve sound signals and filter out some
+project, I use the discrete Fourier transform to efficiently convolve sound signals and filter out some
 types of unwanted noise from both sounds and images.
 
-### Downloand this lab to listen to audio files
+##### *Downloand this project to listen to the audio files*
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">One Dimensional Optimization</a>
+
+- Objective: Most mathematical optimization problems involve estimating the minimizer(s) of
+a scalar-valued function. Many algorithms for optimizing functions with a high-dimensional domain
+depend on routines for optimizing functions of a single variable. There are many techniques for
+optimization in one dimension, each with varying degrees of precision and speed. In this project, I
+implement the golden section search method, Newton’s method, and the secant method, then apply
+them to the backtracking problem.
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">Cancer Prediction</a>
+- Objective: Create a pytorch radiologist using a U-Net DNN. In the notebook, I include method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<hr>
 
 ### Built With
 
-[![Python][Python-icon]][Python-url]
-
-[![Jupyter][Jupyter-icon]][Jupyter-url]
-
-[![Numpy][Numpy-icon]][Numpy-url]
-
-[![Scipy][Scipy-icon]][Scipy-url]
-
-[![Matplotlib][Matplotlib-icon]][Matplotlib-url]
-
-[![Scikit-Learn][Scikit-Learn-icon]][Scikit-Learn-url]
-
-<!--[![PyTorch][PyTorch-icon]][PyTorch-url]
+<!-- [![Scikit-Learn][Scikit-Learn-icon]][Scikit-Learn-url] 
 
 [![Pandas][Pandas-icon]][Pandas-url]
 
 [![SQL][SQL-icon]][SQL-url] -->
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
+| <div style="width:200px">[![Python][Python-icon]][Python-url]</div>| <div style="width:200px">[![Jupyter][Jupyter-icon]][Jupyter-url]</div>| <div style="width:200px">[![Numpy][Numpy-icon]][Numpy-url]</div>             |
+|           ------------            |                    -------------                    |           ------------------       |
+| [![Scipy][Scipy-icon]][Scipy-url] | [![Matplotlib][Matplotlib-icon]][Matplotlib-url]    | [![Sympy][Sympy-icon]][Sympy-url]  |
+| [![PyTorch][PyTorch-icon]][PyTorch-url]   |           [![TQDM][tqdm-icon]][tqdm-url]    | [![Pandas][Pandas-icon]][Pandas-url]    |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,8 +167,14 @@ Ethan Crawford - ethanrctaylor@gmail.com
 [Scipy-icon]: https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white
 [Scipy-url]: https://www.scipy.org/
 
+[Sympy-icon]: https://img.shields.io/badge/Sympy-3B5526?style=for-the-badge&logo=sympy&logoColor=white
+[Sympy-url]: https://www.sympy.org/en/index.html
+
 [SQL-icon]: https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=postgresql&logoColor=white
 [SQL-url]: https://www.postgresql.org/
+
+[tqdm-icon]: https://img.shields.io/badge/tqdm-37B8AF?style=for-the-badge&logo=tqdm&logoColor=white
+[tqdm-url]: https://tqdm.github.io/
 
 [linkedIn-icon]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedIn-url]: https://www.linkedin.com/in/ethan-crawford-766463169/
