@@ -91,7 +91,7 @@ implement the golden section search method, Newton’s method, and the secant me
 them to the backtracking problem.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">Cancer Prediction</a>
-- Objective: Create a pytorch radiologist using a U-Net DNN. In the notebook, I include method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
+- Objective: Create a pytorch radiologist using a U-Net DNN. In the notebook, I include a method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
