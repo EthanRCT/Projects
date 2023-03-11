@@ -111,6 +111,8 @@ them to the backtracking problem.
 
 [![PyTorch][PyTorch-icon]][PyTorch-url] &emsp; &ensp; [![TQDM][tqdm-icon]][tqdm-url] &emsp; &emsp; &ensp; &ensp; [![Pandas][Pandas-icon]][Pandas-url]    
 
+[![Plotly][Plotly-icon]][Plotly-url]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -149,6 +151,9 @@ Ethan Crawford - ethanrctaylor@gmail.com
 
 [Matplotlib-icon]: https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white
 [Matplotlib-url]: https://matplotlib.org/
+
+[Plotly-icon]: https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white
+[Plotly-url]: https://plotly.com/
 
 [Scikit-learn-icon]: https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white
 [Scikit-learn-url]: https://scikit-learn.org/stable/
