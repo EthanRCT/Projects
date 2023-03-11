@@ -93,6 +93,9 @@ them to the backtracking problem.
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">Cancer Prediction</a>
 - Objective: Create a pytorch radiologist using a U-Net DNN. In the notebook, I include a method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Conditioning%20and%20Stability">Conditioning and Stability</a>
+- Objective: The condition number of a function measures how sensitive that function is to changes in the input. On the other hand, the stability of an algorithm measures how accurately that algorithm computes the value of a function from exact input. Both of these concepts are important for answering the crucial question, “is my computer telling the truth?” In this lab I examine the conditioning of common linear algebra problems, including computing polynomial roots and matrix eigenvalues. I also present an example to demonstrate how two different algorithms for the same problem may not have the same level of stability.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <hr>
