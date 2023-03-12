@@ -46,14 +46,14 @@ Each folder contains a Jypiter notebook containing the code and results for each
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Wavelets">Wavelets</a>
 
-- Objective: Wavelets are used to sparsely represent information. This makes them useful in
+- **Objective:** Wavelets are used to sparsely represent information. This makes them useful in
 a variety of applications. I explore both the one and two-dimensional discrete wavelet transforms
 using various types of wavelets. I then use a Python package called PyWavelets for further wavelet
 analysis including image cleaning and image compression.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Facial%20Recognition">Facial Recognition</a>
 
-- Objective: Facial recognition algorithms attempt to match a person’s portrait to a database
+- **Objective:** Facial recognition algorithms attempt to match a person’s portrait to a database
 of many portraits. Facial recognition is becoming increasingly important in security, law enforcement,
 artificial intelligence, and other areas. Though humans can easily match pictures to people, computers
 are beginning to surpass humans at facial recognition. In this project, I implement a basic facial
@@ -62,19 +62,19 @@ between faces.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Markov%20Chains">Markov Chains</a>
 
-- Objective: A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the system depends only on its current state. In this project I learn to construct, analyze, and interact with
+- **Objective:** A Markov chain is a collection of states with specified probabilities for transitioning from one state to another. They are characterized by the fact that the future behavior of the system depends only on its current state. In this project I learn to construct, analyze, and interact with
 Markov chains, then use a Markov-based approach to simulate natural language.
 
 
 ### <a href="https://github.com/EthanRCT/Projects/blob/main/Fourier%20Transform%20%26%20Convolution">Fourier Transform & Convolution</a>
 
-- Objective: The analysis of periodic functions has many applications in pure and applied
+- **Objective:** The analysis of periodic functions has many applications in pure and applied
 mathematics, especially in settings dealing with sound waves. The Fourier transform provides a way
 to analyze such periodic functions. In this lab, I work with digital audio signals
 in Python, implement the discrete Fourier transform, and use the Fourier transform to detect the
 frequencies present in a given sound wave.
 
-- Objective: The Fourier transform reveals information in the frequency domain about signals
+- **Objective:** The Fourier transform reveals information in the frequency domain about signals
 and images that might not be apparent in the usual time (sound) or spatial (image) domain. In this
 project, I use the discrete Fourier transform to efficiently convolve sound signals and filter out some
 types of unwanted noise from both sounds and images.
@@ -83,7 +83,7 @@ types of unwanted noise from both sounds and images.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">One Dimensional Optimization</a>
 
-- Objective: Most mathematical optimization problems involve estimating the minimizer(s) of
+- **Objective:** Most mathematical optimization problems involve estimating the minimizer(s) of
 a scalar-valued function. Many algorithms for optimizing functions with a high-dimensional domain
 depend on routines for optimizing functions of a single variable. There are many techniques for
 optimization in one dimension, each with varying degrees of precision and speed. In this project, I
@@ -91,14 +91,23 @@ implement the golden section search method, Newton’s method, and the secant me
 them to the backtracking problem.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/OneDimmOptimization">Cancer Prediction</a>
-- Objective: Create a pytorch radiologist using a U-Net DNN. In the notebook, I include a method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
+- **Objective:** Create a pytorch radiologist using a U-Net DNN. In the notebook, I include a method of calculating accuracy and images that show the dense prediction produced by the network on an image the network has never seen before.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Conditioning%20and%20Stability">Conditioning and Stability</a>
-- Objective: The condition number of a function measures how sensitive that function is to changes in the input. On the other hand, the stability of an algorithm measures how accurately that algorithm computes the value of a function from exact input. Both of these concepts are important for answering the crucial question, “is my computer telling the truth?” In this lab I examine the conditioning of common linear algebra problems, including computing polynomial roots and matrix eigenvalues. I also present an example to demonstrate how two different algorithms for the same problem may not have the same level of stability.
+- **Objective:** The condition number of a function measures how sensitive that function is to changes in the input. On the other hand, the stability of an algorithm measures how accurately that algorithm computes the value of a function from exact input. Both of these concepts are important for answering the crucial question, “is my computer telling the truth?” In this lab I examine the conditioning of common linear algebra problems, including computing polynomial roots and matrix eigenvalues. I also present an example to demonstrate how two different algorithms for the same problem may not have the same level of stability.
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/weekly_shopping_list">Weekly Shopping List</a>
 
-- Objective: Use the MyFitnessPal API to create a weekly shopping list. If a user records their meals for the coming week into MyFitnessPal, the program will total the ammount of food needed for the week, create a shopping list, and email it to the user.
+- **Objective:** Use the MyFitnessPal API to create a weekly shopping list. If a user records their meals for the coming week into MyFitnessPal, the program will total the ammount of food needed for the week, create a shopping list, and email it to the user.
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/OpenGym">OpenGym</a>
+- **Objective:** OpenGym AI is a module designed to learn and apply reinforcement learning. The
+purpose of this lab is to learn the variety of functionalities available in OpenGym AI, implement them in various environments, and apply basic reinforcement learning techniques.
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/Simplex">Simplex</a>
+- **Objective:** The Simplex Method is a straightforward algorithm for finding optimal solutions
+to optimization problems with linear constraints and cost functions. Because of its simplicity and applicability, this algorithm has been named one of the most important algorithms invented within the last 100 years. In this lab I implement a standard Simplex solver for the primal problem.
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
