@@ -113,13 +113,13 @@ them to the backtracking problem.
 
 [![SQL][SQL-icon]][SQL-url] -->
 
-[![Python][Python-icon]][Python-url] &emsp; &emsp; [![Jupyter][Jupyter-icon]][Jupyter-url] &emsp; &emsp; &nbsp; [![Numpy][Numpy-icon]][Numpy-url] 
+[![Python][Python-icon]][Python-url] &emsp; &ensp; &ensp; [![Jupyter][Jupyter-icon]][Jupyter-url] &emsp; &emsp; &nbsp; [![Numpy][Numpy-icon]][Numpy-url] 
 
-[![Scipy][Scipy-icon]][Scipy-url] &emsp; &emsp; &ensp; [![Matplotlib][Matplotlib-icon]][Matplotlib-url] &emsp; &emsp;  [![Sympy][Sympy-icon]][Sympy-url]  
+[![Scipy][Scipy-icon]][Scipy-url] &emsp; &ensp; &ensp; &ensp; [![Matplotlib][Matplotlib-icon]][Matplotlib-url] &emsp; &emsp;  [![Sympy][Sympy-icon]][Sympy-url]  
 
-[![PyTorch][PyTorch-icon]][PyTorch-url] &emsp; &ensp; [![TQDM][tqdm-icon]][tqdm-url] &emsp; &emsp; &ensp; &ensp; [![Pandas][Pandas-icon]][Pandas-url]    
+[![PyTorch][PyTorch-icon]][PyTorch-url] &emsp; &ensp; [![TQDM][tqdm-icon]][tqdm-url] &emsp; &ensp; &ensp; &ensp; &ensp; [![Pandas][Pandas-icon]][Pandas-url]    
 
-[![Plotly][Plotly-icon]][Plotly-url]
+[![Plotly][Plotly-icon]][Plotly-url]  &emsp; &emsp; &ensp;[![RegEx][RegEx-icon]][RegEx-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +160,7 @@ Ethan Crawford - ethanrctaylor@gmail.com
 [Matplotlib-icon]: https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white
 [Matplotlib-url]: https://matplotlib.org/
 
-[Plotly-icon]: https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white
+[Plotly-icon]: https://img.shields.io/badge/Plotly-7253ed?style=for-the-badge&logo=plotly&logoColor=white
 [Plotly-url]: https://plotly.com/
 
 [Scikit-learn-icon]: https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white
@@ -177,6 +177,9 @@ Ethan Crawford - ethanrctaylor@gmail.com
 
 [Sympy-icon]: https://img.shields.io/badge/Sympy-3B5526?style=for-the-badge&logo=sympy&logoColor=white
 [Sympy-url]: https://www.sympy.org/en/index.html
+
+[RegEx-icon]: https://img.shields.io/badge/RegEx-009900?style=for-the-badge&logo=regex&logoColor=white
+[RegEx-url]: https://regexr.com/
 
 [SQL-icon]: https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=postgresql&logoColor=white
 [SQL-url]: https://www.postgresql.org/
