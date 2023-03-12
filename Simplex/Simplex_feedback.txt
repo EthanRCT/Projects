@@ -1,0 +1,32 @@
+03/07/23 09:42
+
+Problems 1-5 (35 points):
+AttributeError: 'SimplexSolver' object has no attribute 'dictionary'
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 15/50 = 30.0%
+
+-------------------------------------------------------------------------------
+
+03/07/23 13:51
+
+Problems 1-5 (35 points):
+Score += 35
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+
