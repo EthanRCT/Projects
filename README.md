@@ -96,6 +96,11 @@ them to the backtracking problem.
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/Conditioning%20and%20Stability">Conditioning and Stability</a>
 - Objective: The condition number of a function measures how sensitive that function is to changes in the input. On the other hand, the stability of an algorithm measures how accurately that algorithm computes the value of a function from exact input. Both of these concepts are important for answering the crucial question, “is my computer telling the truth?” In this lab I examine the conditioning of common linear algebra problems, including computing polynomial roots and matrix eigenvalues. I also present an example to demonstrate how two different algorithms for the same problem may not have the same level of stability.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/weekly_shopping_list">Weekly Shopping List</a>
+
+- Objective: Use the MyFitnessPal API to create a weekly shopping list. If a user records their meals for the coming week into MyFitnessPal, the program will total the ammount of food needed for the week, create a shopping list, and email it to the user.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <hr>
