@@ -108,6 +108,8 @@ purpose of this lab is to learn the variety of functionalities available in Open
 - **Objective:** The Simplex Method is a straightforward algorithm for finding optimal solutions
 to optimization problems with linear constraints and cost functions. Because of its simplicity and applicability, this algorithm has been named one of the most important algorithms invented within the last 100 years. In this lab I implement a standard Simplex solver for the primal problem.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/ComplexFunctions">Complex Functions</a>
+- **Objective:** Functions that map from the complex plane into the complex plane are difficult to fully visualize because the domain and range are both 2-dimensional. However, such functions can be visualized at the expense of partial information. In this lab I present methods for analyzing complex-valued functions visually, including locating their zeros and poles in the complex plane.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
