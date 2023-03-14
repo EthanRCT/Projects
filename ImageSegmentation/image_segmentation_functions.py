@@ -87,7 +87,7 @@ class ImageSegmenter:
         self.height = self.image.shape[0]
         self.width = self.image.shape[1]
 
-        # If the len of the shape of the image is 3, it is color
+        # If the len of the shape of the image is 3, it is color (RGB channels)
         if len(self.image.shape) == 3:
             self.brightness = np.ravel(self.image.mean(axis=2))
         else:
@@ -96,28 +96,34 @@ class ImageSegmenter:
     # Problem 3
     def show_original(self):
         """Display the original image."""
+        size = len(self.image.shape)
+
         # Print the grayscale image
-        if len(self.image.shape) < 3:
-            plt.imshow(self.image, cmap="gray")
-            plt.show()
-        # Print the color image
-        if len(self.image.shape) == 3:
-            plt.imshow(self.image)
-            plt.show()        
+        if size < 3:
+            cmap = "gray"
+        else:
+            cmap = None
+
+        plt.imshow(self.image, cmap=cmap)
+        plt.axis("off")
+        plt.show()      
 
     # Problem 4
     def adjacency(self, r=5., sigma_B2=.02, sigma_X2=3.):
         """Compute the Adjacency and Degree matrices for the image graph."""
+        # Compute the adjacency matrix A and degree matrix D
         mn = len(self.brightness)
         A = scipy.sparse.lil_matrix((mn,mn))
         D = np.empty(mn)
         
+        # Calculate the weights for each pixel
         for i in range(mn):
             neighbors,distances = get_neighbors(i,r,self.height,self.width)
             weights = np.exp(-(np.abs(self.brightness[i]-self.brightness[neighbors])/sigma_B2)-(np.abs(distances)/sigma_X2))
             A[i, neighbors] = weights
             D[i] = np.sum(weights)
 
+        # Convert A to a sparse matrix and return
         A = A.tocsc()    
         return A,D
 
@@ -129,7 +135,8 @@ class ImageSegmenter:
 
         # Construct a sparse diagonal matrix
         sp = scipy.sparse.diags(1/np.sqrt(D)).tocsc()
-        Dhalf = sp@L@sp        
+        Dhalf = sp@L@sp     
+
         # Use scipy.sparse.linalg.eigsh() to compute the eigenvector corresponding to the
         # second-smallest eigenvalue of D L D
         _,vec = scipy.sparse.linalg.eigsh(Dhalf, which="SM", k=2)
@@ -137,8 +144,8 @@ class ImageSegmenter:
         # Reshape the eigenvector as a m × n matrix and use this matrix to construct the desired
         # boolean mask
         vec = vec[:,1].reshape(self.height,self.width)
-
         mask = vec > 0
+
         return mask
 
     # Problem 6
