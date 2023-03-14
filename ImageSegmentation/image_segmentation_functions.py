@@ -12,7 +12,6 @@ from matplotlib import pyplot as plt
 import scipy.sparse
 import scipy.sparse.linalg
 
-
 # Problem 1
 def laplacian(A):
     """Compute the Laplacian matrix of the graph G that has adjacency matrix A.
