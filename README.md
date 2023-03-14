@@ -111,6 +111,9 @@ to optimization problems with linear constraints and cost functions. Because of 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/ComplexFunctions">Complex Functions</a>
 - **Objective:** Functions that map from the complex plane into the complex plane are difficult to fully visualize because the domain and range are both 2-dimensional. However, such functions can be visualized at the expense of partial information. In this lab I present methods for analyzing complex-valued functions visually, including locating their zeros and poles in the complex plane.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/ImageSegmentation">Image Segmentation</a>
+- **Lab Objective:** Graph theory has a variety of applications. A graph (or network) can be represented in many ways on a computer. In this lab I study a common matrix representation for graphs and show how certain properties of the matrix representation correspond to inherent properties of the original graph. I also use tools for working with images in Python, and conclude with an application of using graphs and linear algebra to segment images.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
