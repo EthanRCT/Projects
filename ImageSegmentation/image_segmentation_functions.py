@@ -132,7 +132,7 @@ class ImageSegmenter:
         Dhalf = sp@L@sp        
         # Use scipy.sparse.linalg.eigsh() to compute the eigenvector corresponding to the
         # second-smallest eigenvalue of D L D
-        eigs,vec = scipy.sparse.linalg.eigsh(Dhalf, which="SM", k=2)
+        _,vec = scipy.sparse.linalg.eigsh(Dhalf, which="SM", k=2)
 
         # Reshape the eigenvector as a m × n matrix and use this matrix to construct the desired
         # boolean mask
@@ -140,8 +140,6 @@ class ImageSegmenter:
 
         mask = vec > 0
         return mask
-
-
 
     # Problem 6
     def segment(self, r=5., sigma_B=.02, sigma_X=3.):
@@ -154,23 +152,29 @@ class ImageSegmenter:
         # Display the original image and its segments
         size = len(self.image.shape)
         if size < 3:
+            updated_mask = mask
             cmap = "gray"
         elif size == 3:
+            updated_mask = np.dstack((mask,mask,mask))
             cmap = None
 
-        (ax1, ax2, ax3) = plt.subplots(1, 3)[1:]
-        ax1.imshow(self.image * mask, cmap=cmap)
-        ax2.imshow(self.image * ~mask, cmap=cmap)
+        (ax1, ax2, ax3) = plt.subplots(1, 3)[1]
+        ax1.imshow(self.image * updated_mask, cmap=cmap)
+        ax2.imshow(self.image * ~updated_mask, cmap=cmap)
         ax3.imshow(self.image, cmap=cmap)
 
+        plt.tight_layout()
+
         if cmap == "gray":
-            plt.suptitle("Black and White")
+            plt.suptitle("Black and White", y=.8)
         else:
-            plt.suptitle("Color")
+            plt.suptitle("Color", y=.8)
 
-        for ax in (ax1, ax2, ax3):
+        for ax, title in zip((ax1, ax2, ax3), ("Segmented", "Segmented", "Original")):
             ax.axis('off')
+            ax.set_title(title)
 
+        plt.gcf().set_dpi(150)
         plt.tight_layout()
         plt.show()
 
