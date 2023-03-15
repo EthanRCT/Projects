@@ -12,7 +12,6 @@ from matplotlib import pyplot as plt
 import scipy.sparse
 import scipy.sparse.linalg
 
-
 # Problem 1
 def laplacian(A):
     """Compute the Laplacian matrix of the graph G that has adjacency matrix A.
@@ -87,7 +86,7 @@ class ImageSegmenter:
         self.height = self.image.shape[0]
         self.width = self.image.shape[1]
 
-        # If the len of the shape of the image is 3, it is color
+        # If the len of the shape of the image is 3, it is color (RGB channels)
         if len(self.image.shape) == 3:
             self.brightness = np.ravel(self.image.mean(axis=2))
         else:
@@ -96,28 +95,34 @@ class ImageSegmenter:
     # Problem 3
     def show_original(self):
         """Display the original image."""
+        size = len(self.image.shape)
+
         # Print the grayscale image
-        if len(self.image.shape) < 3:
-            plt.imshow(self.image, cmap="gray")
-            plt.show()
-        # Print the color image
-        if len(self.image.shape) == 3:
-            plt.imshow(self.image)
-            plt.show()        
+        if size < 3:
+            cmap = "gray"
+        else:
+            cmap = None
+
+        plt.imshow(self.image, cmap=cmap)
+        plt.axis("off")
+        plt.show()      
 
     # Problem 4
     def adjacency(self, r=5., sigma_B2=.02, sigma_X2=3.):
         """Compute the Adjacency and Degree matrices for the image graph."""
+        # Compute the adjacency matrix A and degree matrix D
         mn = len(self.brightness)
         A = scipy.sparse.lil_matrix((mn,mn))
         D = np.empty(mn)
         
+        # Calculate the weights for each pixel
         for i in range(mn):
             neighbors,distances = get_neighbors(i,r,self.height,self.width)
             weights = np.exp(-(np.abs(self.brightness[i]-self.brightness[neighbors])/sigma_B2)-(np.abs(distances)/sigma_X2))
             A[i, neighbors] = weights
             D[i] = np.sum(weights)
 
+        # Convert A to a sparse matrix and return
         A = A.tocsc()    
         return A,D
 
@@ -129,19 +134,18 @@ class ImageSegmenter:
 
         # Construct a sparse diagonal matrix
         sp = scipy.sparse.diags(1/np.sqrt(D)).tocsc()
-        Dhalf = sp@L@sp        
+        Dhalf = sp@L@sp     
+
         # Use scipy.sparse.linalg.eigsh() to compute the eigenvector corresponding to the
         # second-smallest eigenvalue of D L D
-        eigs,vec = scipy.sparse.linalg.eigsh(Dhalf, which="SM", k=2)
+        _,vec = scipy.sparse.linalg.eigsh(Dhalf, which="SM", k=2)
 
         # Reshape the eigenvector as a m × n matrix and use this matrix to construct the desired
         # boolean mask
         vec = vec[:,1].reshape(self.height,self.width)
-
         mask = vec > 0
+
         return mask
-
-
 
     # Problem 6
     def segment(self, r=5., sigma_B=.02, sigma_X=3.):
@@ -154,23 +158,29 @@ class ImageSegmenter:
         # Display the original image and its segments
         size = len(self.image.shape)
         if size < 3:
+            updated_mask = mask
             cmap = "gray"
         elif size == 3:
+            updated_mask = np.dstack((mask,mask,mask))
             cmap = None
 
-        (ax1, ax2, ax3) = plt.subplots(1, 3)[1:]
-        ax1.imshow(self.image * mask, cmap=cmap)
-        ax2.imshow(self.image * ~mask, cmap=cmap)
+        (ax1, ax2, ax3) = plt.subplots(1, 3)[1]
+        ax1.imshow(self.image * updated_mask, cmap=cmap)
+        ax2.imshow(self.image * ~updated_mask, cmap=cmap)
         ax3.imshow(self.image, cmap=cmap)
 
+        plt.tight_layout()
+
         if cmap == "gray":
-            plt.suptitle("Black and White")
+            plt.suptitle("Black and White", y=.8)
         else:
-            plt.suptitle("Color")
+            plt.suptitle("Color", y=.8)
 
-        for ax in (ax1, ax2, ax3):
+        for ax, title in zip((ax1, ax2, ax3), ("Segmented", "Segmented", "Original")):
             ax.axis('off')
+            ax.set_title(title)
 
+        plt.gcf().set_dpi(150)
         plt.tight_layout()
         plt.show()
 

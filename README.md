@@ -25,7 +25,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#labs">Labs</a>
+      <a href="#labs">All Projects</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -37,8 +37,8 @@
 
 
 
-<!-- Labs -->
-## Labs
+<!-- Projects -->
+## Projects
 
 Each folder contains a Jypiter notebook containing the code and results for each project. Here is a list of the projects and their descriptions:
 
@@ -110,6 +110,12 @@ to optimization problems with linear constraints and cost functions. Because of 
 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/ComplexFunctions">Complex Functions</a>
 - **Objective:** Functions that map from the complex plane into the complex plane are difficult to fully visualize because the domain and range are both 2-dimensional. However, such functions can be visualized at the expense of partial information. In this lab I present methods for analyzing complex-valued functions visually, including locating their zeros and poles in the complex plane.
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/ImageSegmentation">Image Segmentation</a>
+- **Objective:** Graph theory has a variety of applications. A graph (or network) can be represented in many ways on a computer. In this lab I study a common matrix representation for graphs and show how certain properties of the matrix representation correspond to inherent properties of the original graph. I also use tools for working with images in Python, and conclude with an application of using graphs and linear algebra to segment images.
+
+### <a href="https://github.com/EthanRCT/Projects/tree/main/StyleTransfer">Style Transfer</a>
+- **Objective:** Style transfer is a technique for combining the content of one image with the style of another image. In this project, I use the Gram matrix to compute the style of an image, and use gradient descent to optimize the content of an image to match the content of one image and the style of another image.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
