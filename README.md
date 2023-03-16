@@ -117,6 +117,8 @@ to optimization problems with linear constraints and cost functions. Because of 
 ### <a href="https://github.com/EthanRCT/Projects/tree/main/StyleTransfer">Style Transfer</a>
 - **Objective:** Style transfer is a technique for combining the content of one image with the style of another image. In this project, I use the Gram matrix to compute the style of an image, and use gradient descent to optimize the content of an image to match the content of one image and the style of another image.
 
+### <a href="https://github.com/EthanRCT/Projects/tree/main/StableDiffusion">Stable Diffusion</a>
+- **Objective:** In this lab, I implement several key parts of a State of the Art Stable Diffusion model. Specifically, I will work with the Stable Diffusion model pipeline. Due to hardware constraints (training this model is very memory intensive), I will not train the model, but will load pretrained weights from the Stable Diffusion repository on [huggingface.co](huggingface.co). Then, I run inference with the pipeline and generate images.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
